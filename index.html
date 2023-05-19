@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mensajes Encriptados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Inter:wght@100&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>Encriptador</title>
   </head>
   <body>
-    <nav>
-      <img src="img/Logotipo.png" alt="Logotipo" />
-    </nav>
+    <header>
+      <img src="img/Logotipo.png" alt="Logotipo de alura" class="logo" />
+    </header>
     <main>
       <section>
-        <input
-          type="text"
-          name="texto1"
-          id="mensaje1"
-          placeholder="Ingrese aquí su texto"
-        />
-        <img src="img/signo-de-exclamacion-en-un-circulo.png" alt="Imagen" />
-        <p>Sólo letras minúsculas y sin acentos</p>
-        <button type="submit" name="Encriptar">Encriptar</button>
-        <button type="submit" name="Desencriptar">Desencriptar</button>
+        <textarea class="text-area" cols="30" rows="10">
+"Ingrese aquí el texto a encriptar"</textarea
+        >
+        <div class="informacion">
+          <img src="img/admiracion.png" alt="signo de admiración" />
+          <p class="advertencia">Sólo minúsculas y sin acento</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar">Encriptar</button>
+          <button class="btn-desencriptar">Desencriptar</button>
+        </div>
       </section>
       <section>
-        <div>
-          <img src="img/buscar.png" alt="Imagen" />
-          <p>Este es un mensaje de alerta</p>
-          <input
-            type="text"
-            name="texto2"
-            placeholder="Ingrese aquí su mensaje"
-          />
-          <button type="submit" value="Copiar">Copiar</button>
-        </div>
+        <textarea class="mensaje" cols="20" rows="17"></textarea>
+        <div><button class="btn-copiar">Copiar</button></div>
       </section>
     </main>
     <footer>
-      <p>Desarrollado por: <span>Ing. Eduardo E. Enríquez</span></p>
+      Estudiante: Ing. Eduardo E. Enríquez R. <br />
+      Plataforma: ORACLE + Alura LATAM<br />
+      Grupo: 5
     </footer>
   </body>
 </html>
